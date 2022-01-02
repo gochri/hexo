@@ -151,7 +151,7 @@ avatar:
 
 其中 url 下的地址是在 source/ 下的相对地址
 
-3. 项目定制化
+### 项目定制化
 
 最后修改下网站标题
 
@@ -161,10 +161,10 @@ avatar:
 # Site
 title: gochri site
 subtitle: ""
-description: "gochri site"
+description: ""
 keywords:
 author: gochri
-language: en
+language: zh-CN
 ```
 
 ## 发布文章

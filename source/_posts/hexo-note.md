@@ -2,7 +2,10 @@
 title: Hexo 站点搭建笔记
 date: 2022-01-01 18:53:30
 categories: # 分类
+ - Blog
 tags: # 标签 -hexo 
+ - Hexo
+ - Blog
 description: Hexo 站点安装 个性化 及文章发布
 ---
 

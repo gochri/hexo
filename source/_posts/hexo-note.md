@@ -2,10 +2,10 @@
 title: Hexo 站点搭建笔记
 date: 2022-01-01 18:53:30
 categories: # 分类
- - Blog
-tags: # 标签 -hexo 
- - Hexo
- - Blog
+  - Blog
+tags: # 标签 -hexo
+  - Hexo
+  - Blog
 description: Hexo 站点安装 个性化 及文章发布
 ---
 
@@ -172,6 +172,34 @@ language: zh-CN
 
 ## 发布文章
 
+### 新建标签
+
+在新建文章前，需新建标签，才能使文章头部 Front-matter 生效
+
+执行如下语句
+
+```bash
+npx hexo new page tags
+```
+
+即可在 source\tags\ 下新建 index.md ,然后在 md 文件中添加 type 如下：
+
+```md
+type: "tags"
+```
+
+之后访问 localhost:4000/tags 即可进入 tags 页面
+
+同理,对 categories 执行命令并添加 type
+
+```bash
+npx hexo new page categories
+```
+
+```index.md
+type: "categories"
+```
+
 ### 新建文章
 
 执行如下语句，即可在 source\_posts\ 中新建对应的 md 文件
@@ -192,7 +220,6 @@ description: # 首页出现的描述 不写默认显示 <!--more--> 前所有内
 ---
 ```
 
-**标签与分类的详细操作 待下篇进行**
 
 ### 编辑文章
 

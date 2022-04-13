@@ -20,38 +20,37 @@ description: 来开发一个最简单的vscode-snippet插件吧
 
 或拷贝解压文件到 .vscode/extension 下
 
-或从应用市场直接下载
+或从应用市场直接下载 html snippets 等插件直接使用
 
 ## 使用示例
 
-todo
+| 触发前缀 |插入到编辑器中的内容  |
+| --- | --- |
+|csl  | console.log('') |
 
 ## 支持的语言
 
 * JavaScript(.js)
 * TypeScrit(.ts)
 * JavaScript React(.jsx)
-
-## 片段
-
-| 触发前缀 |插入到编辑器中的内容  |
-| --- | --- |
-|csl  | console.log('') |
+* etc
   
-## snippets规则说明
+## snippets说明
 
-<!--  ### 创建snippets -->
+### 创建snippets
 
-<!--  在 vscode 中 Ctrl+P 打开命令行 -->
+在 vscode 中 Ctrl+P 打开命令行 
 
-<!--  
+  
 ```
 >Preferences: Configure User Snippets
 
 新建XXX文件夹的代码片段文件
 ```
    
-<!-- 即可创建项目级别的代码片段 -->
+即可创建项目级别的代码片段
+
+### snippets规则
 
 规则形式如下
 
@@ -77,7 +76,7 @@ todo
 
 在 jsx 文件下生效需指定为 javascriptreact
 
-### body 规则
+#### body 规则
 
 1. 支持通过 $1 $2 指定光标位置，且支持多个 $1 同时编辑
 
@@ -203,6 +202,7 @@ npx vsce package
 
 即可生成对应的.vsix 文件
 
+后续可将项目发布至 vscode 插件商店
 
 ## 参考教程
 

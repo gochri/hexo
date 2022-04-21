@@ -156,7 +156,7 @@ avatar:
 
 ### 项目定制化
 
-最后修改下网站标题
+修改网站标题
 
 修改 \_config.yml 形如下：
 
@@ -168,6 +168,12 @@ description: ""
 keywords:
 author: gochri
 language: zh-CN
+```
+
+修改文章地址
+```yml
+# permalink: :year/:month/:day/:title/
+permalink: :title/
 ```
 
 ## 发布文章
